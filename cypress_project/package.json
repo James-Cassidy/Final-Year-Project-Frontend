@@ -1,0 +1,18 @@
+{
+  "name": "team11-cypress",
+  "version": "1.0.0",
+  "description": "Team11-Cypress Project-E2E testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx run cypress"
+  },
+  "author": "Team 11",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.4",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6"
+  }
+}

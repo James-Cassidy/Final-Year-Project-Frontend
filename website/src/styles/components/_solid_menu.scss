@@ -1,0 +1,78 @@
+@import '../common.scss';
+
+.light-menu-container-solid {
+  display: flex;
+  flex-direction: column;
+  background-image: $lightModeSolid;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 600px) {
+  .light-menu-container-solid {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 400px;
+    margin-top: 5% !important;
+  }
+
+  .Leaderboard {
+    width: 1340px;
+  }
+}
+
+/* Dark mode */
+.dark-menu-container-solid {
+  display: flex;
+  flex-direction: column;
+  background-color: $darkModeSolid; /* Dark mode background color */
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 600px) {
+  .dark-menu-container-solid {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 400px;
+    margin-top: 5% !important;
+  }
+
+  .Leaderboard {
+    width: 1340px;
+  }
+}
+
+.contrast-menu-container-solid {
+  display: flex;
+  flex-direction: column;
+  background-color: $highContrastModeSolid;
+  color: black;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 600px) {
+  .contrast-menu-container-solid {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 400px;
+    margin-top: 5% !important;
+  }
+
+  .Leaderboard {
+    width: 1340px;
+  }
+}

@@ -1,0 +1,258 @@
+@import '../common.scss';
+
+.admin-instructions {
+  text-align: left;
+  font-size: 14px;
+}
+
+.admin-instructions li {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.admin-button-container {
+  display: flex;
+}
+
+.scenario-wrapper {
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+}
+
+.admin-scenario-edit-box {
+  margin-top: 20px;
+  resize: none;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* Container for the buttons */
+.admin-menu-options {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width */
+  margin-bottom: 10px;
+}
+
+/* Individual button styling */
+.light-admin-menu-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 200px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+}
+
+/* Button hover state */
+.light-admin-menu-button:hover {
+  border-color: white; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+/* Individual button styling */
+.dark-admin-menu-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 200px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+}
+
+/* Button hover state */
+.dark-admin-menu-button:hover {
+  border-color: white; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+/* Individual button styling */
+.contrast-admin-menu-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 200px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+}
+
+/* Button hover state */
+.contrast-admin-menu-button:hover {
+  border-color: black; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+.light-admin-menu-container {
+  display: flex;
+  flex-direction: column;
+  background-image: $lightModeTransparent;
+}
+
+@media screen and (min-width: 600px) {
+  .light-admin-menu-container {
+    /* padding: 5rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    margin-top: 8%;
+  }
+}
+
+.dark-admin-menu-container {
+  display: flex;
+  flex-direction: column;
+  background-image: $darkModeTransparent;
+}
+
+@media screen and (min-width: 600px) {
+  .dark-admin-menu-container {
+    /* padding: 5rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    margin-top: 8%;
+  }
+}
+
+/* Individual button styling */
+.dark-admin-menu-button-right {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 200px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin-top: 10px;
+  margin-left: 400px;
+}
+
+/* Button hover state */
+.dark-admin-menu-button-right:hover {
+  border-color: white; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+/* Individual button styling */
+.light-admin-menu-button-right {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 200px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin-top: 10px;
+  margin-left: 400px;
+}
+
+/* Button hover state */
+.light-admin-menu-button-right:hover {
+  border-color: white; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+/* Individual button styling */
+.contrast-admin-menu-button-right {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 200px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin-top: 10px;
+  margin-left: 400px;
+}
+
+/* Button hover state */
+.contrast-admin-menu-button-right:hover {
+  border-color: black; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+.contrast-admin-menu-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $highContrastModeSolid;
+  color: black !important;
+}
+
+@media screen and (min-width: 600px) {
+  .contrast-admin-menu-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    margin-top: 8%;
+  }
+}

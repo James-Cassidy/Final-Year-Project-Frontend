@@ -1,0 +1,82 @@
+.pop-up-title {
+  margin-bottom: 20px;
+}
+
+.pop-up-text-settings ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.pop-up-text ul {
+  list-style-type: circle;
+  padding-left: 0;
+}
+
+.pop-up-text ul ul {
+  padding-left: 20px; /* Adjust the indentation for the second level */
+  list-style-type: square;
+}
+
+.pop-up-text,
+.pop-up-text-settings li {
+  text-align: left;
+}
+
+.pop-up-button {
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  width: 200px;
+  cursor: pointer;
+  color: #14228c;
+  font-size: medium;
+  font-weight: bold;
+  align-self: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.pop-up-button-proceed {
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  width: 200px;
+  cursor: pointer;
+  color: #14228c;
+  font-size: medium;
+  font-weight: bold;
+  align-self: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.pop-up-button-proceed:hover {
+  border-color: #14228c; /* Dark outline color on hover */
+}
+
+.pop-up-button:hover {
+  border-color: #14228c; /* Dark outline color on hover */
+}
+
+.pop-up-button-proceed:disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pop-up-button:disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pop-up-select {
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}

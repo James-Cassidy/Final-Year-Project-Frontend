@@ -1,0 +1,114 @@
+image: ubuntu:18.04
+stages: 
+  - build
+  - lint
+  - test
+  - deploy
+  - post_deploy
+
+cache:
+  paths:
+    - node_modules/ 
+    - website/node_modules/ 
+
+build_job_non_prod:
+  stage: build
+  except:
+    - main
+  script:
+    - npm install
+    - npm run build
+    - cd website
+    - npm install
+    - REACT_APP_API_KEY=$NON_PRODUCTION_API_KEY REACT_APP_BACKEND_URL=$NON_PRODUCTION_URL npm run build
+  artifacts:
+    paths:
+      - website/build
+      - dist
+
+build_job_prod:
+  stage: build
+  only:
+    - main
+  script:
+    - npm install
+    - npm run build
+    - cd website
+    - npm install
+    - REACT_APP_API_KEY=$PRODUCTION_API_KEY REACT_APP_BACKEND_URL=$PRODUCTION_URL npm run build
+  artifacts:
+    paths:
+      - website/build
+      - dist
+
+format_job:
+  stage: lint
+  script:
+    - node -v
+    - npm install -g prettier
+    - prettier --check  "lib/**/*.ts"
+    - prettier --check  "bin/**/*.ts"
+    - cd website
+    - npm install -g prettier
+    - prettier --check  "src/**/*.ts"
+    - prettier --check  "src/**/*.tsx"
+
+unit_test_job:
+  stage: test
+  script:
+    - npm run test
+    - cd website
+    - npm run test
+
+  
+deployment_test:
+  stage: deploy
+  variables:
+    ENVIRONMENT: "non-prod"
+    API_KEY: $NON_PRODUCTION_API_KEY
+    BACKEND_URL: $NON_PRODUCTION_URL
+  except:
+    - main
+  script:
+    - echo "Deploying to '$ENVIRONMENT' Environment"
+    - cd website
+    - echo "REACT_APP_BACKEND_URL=$BACKEND_URL \n REACT_APP_API_KEY=$API_KEY" >> .env
+    - cd ..
+    - cdk synth
+    - cdk deploy --require-approval never
+
+deployment_production:
+  stage: deploy
+  variables:
+    ENVIRONMENT: "prod"
+    API_KEY: $PRODUCTION_API_KEY
+    BACKEND_URL: $PRODUCTION_URL
+  only:
+    - main
+  script:
+    - echo "Deploying to '$ENVIRONMENT' Environment"
+    - cd website
+    - echo "REACT_APP_BACKEND_URL=$BACKEND_URL \n REACT_APP_API_KEY=$API_KEY" >> .env
+    - cd ..
+    - cdk synth
+    - cdk deploy --require-approval never
+  
+cypress_testing_production:
+  stage: post_deploy
+  only:
+    - main
+  script:
+    - cd cypress_project
+    - npm install
+    - echo $FRONTEND_PRODUCTION_URL
+    - npx cypress run --env url=$FRONTEND_PRODUCTION_URL,password=$ADMIN_LOGIN
+
+cypress_testing_non_production:
+  stage: post_deploy
+  except:
+    - main
+  script:
+    - cd cypress_project
+    - npm install
+    - echo $URL $PASS
+    - npx cypress run --env url=$FRONTEND_NON_PRODUCTION_URL,password=$ADMIN_LOGIN

@@ -1,0 +1,168 @@
+@import '../common.scss';
+
+.results-table {
+  margin-top: 20px;
+  width: 540px;
+  border-collapse: collapse;
+}
+
+.results-table td {
+  padding: 8px;
+  /* border: 1px solid #ddd; */
+  text-align: left; /* Align text to the left */
+}
+
+.light-menu-container-summary {
+  margin-top: 5% !important;
+  display: flex;
+  flex-direction: column;
+  background-image: $lightModeTransparent;
+}
+
+@media screen and (min-width: 200px) {
+  .light-menu-container-summary {
+    padding: 4rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+.contrast-menu-container-summary {
+  margin-top: 5% !important;
+  display: flex;
+  color: black !important;
+  flex-direction: column;
+  background-color: $highContrastModeSolid;
+}
+
+@media screen and (min-width: 200px) {
+  .contrast-menu-container-summary {
+    padding: 4rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+/* Individual button styling */
+.contrast-quiz-summary-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 150px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+}
+
+/* Button hover state */
+.contrast-quiz-summary-button:hover {
+  border-color: black; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+/* Individual button styling */
+.dark-quiz-summary-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 150px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+}
+
+/* Button hover state */
+.dark-quiz-summary-button:hover {
+  border-color: white; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+/* Individual button styling */
+.light-quiz-summary-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 150px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+}
+
+/* Button hover state */
+.light-quiz-summary-button:hover {
+  border-color: white; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+.quiz-summary-button-container {
+  display: flex;
+  justify-content: space-around; /* Ensure equal spacing between buttons */
+  gap: 10px; /* Add a 10px gap between buttons */
+}
+
+.quiz-button {
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  background-color: white;
+  border-radius: 30px;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  color: #14228c;
+  margin-top: 30px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.quiz-button:hover {
+  border-color: #14228c; /* Dark outline color on hover */
+}
+
+.summary-options {
+  display: flex;
+  justify-content: space-around; /* or space-evenly */
+}
+
+.dark-menu-container-summary {
+  margin-top: 5% !important;
+  display: flex;
+  flex-direction: column;
+  background-image: $darkModeTransparent;
+}
+
+@media screen and (min-width: 200px) {
+  .dark-menu-container-summary {
+    padding: 4rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}

@@ -1,0 +1,191 @@
+{
+    "title": "SQL Injection",
+    "reconnaissance": [
+        {
+            "question": "Which of the following is true about a SQL Injection attack",
+            "optionA": "Install malicious programs",
+            "optionB": "Export valuable data",
+            "optionC": "Obtain user details",
+            "optionD": "All the above",
+            "answer": "All the above",
+            "stage": "Reconnaissence: The attacker gathers information about the target system, identifying potential vulnerabilities or weak points in the security measures.",
+            "explaination": "Installing malicious programs, exporting valuable data, and obtaining user data are all potential targets for a SQL Injection attack"
+        },
+        {
+            "question": "How can we prevent a SQL Injection Attack?",
+            "optionA": "Admin accounts should not be used",
+            "optionB": "Access Privileges should be restricted for for users",
+            "optionC": "Sanitize user input before login for validation",
+            "optionD": "All the above",
+            "answer": "All the above",
+            "stage": "Reconnaissence: The attacker gathers information about the target system, identifying potential vulnerabilities or weak points in the security measures.",
+            "explaination": "Admin accounts not being used, restricted priveleges, and sanitising user input for validation are all security measures that may prevent SQL Injection"
+        }
+    ],
+    "weaponisation": [
+        {
+            "question": "What is the primary goal of an SQL Injection Attack?",
+            "optionA": "To manipulate or access a database directly",
+            "optionB": "To distract security personnel from other malicious activities",
+            "optionC": "To erase or encrypt system logs of malicious activities",
+            "optionD": "To overload network bandwidth",
+            "answer": "To manipulate or access a database directly",
+            "stage": "Weaponization: The attacker creates a malicious SQL query that can exploit the identified vulnerabilities",
+            "explaination": "The main goal of a SQL Injection attack is to access the database directly, potentially giving the attacker access to user information."
+        },
+        {
+            "question": "What is blind SQL Injection?",
+            "optionA": "SQL Injection that causes the user to be unable to see their database",
+            "optionB": "The Injection of SQL queries that delay the servers response",
+            "optionC": "SQL Injection where the malicious user cannot see the results of their queries",
+            "optionD": "SQL Injection that cybersecurity professionals cannot see",
+            "answer": "SQL Injection where the malicious user cannot see the results of their queries",
+            "stage": "Weaponization: The attacker creates a malicious SQL query that can exploit the identified vulnerabilities.",
+            "explaination":"Blind SQL Injection is when an attacker cannot see the results of their queries, the hacker will assess if their queries have worked based on the systems behaviour."
+        },
+        {
+            "question": "How could SQL Injection be used during the Reconnaissance stage of the Cyber Kill Chain?",
+            "optionA": "To inject malicious code into the database, disrupting its normal use",
+            "optionB": "To modify existing data",
+            "optionC": "To extract data from the companies database",
+            "optionD": "To exploit a vulnerability and gain access to a companies database",
+            "answer": "To extract data from the companies database",
+            "stage": "Reconnaissence: The attacker gathers information about the target system, identifying potential vulnerabilities or weak points in the security measures.",
+            "explaination": "During the reconnaissence stage the attacker will gather information about the target system, they will use this time to extract data from the company database."
+        }
+    ],
+    "delivery":[
+        {
+            "question": "How can we combat time based SQL Injection in the reconnaissance stage of a cyberattack?",
+            "optionA": "By sharing sensitive information with external parties",
+            "optionB": "Use old and reliable software versions",
+            "optionC": "Rely on Intrusion Detection Systems",
+            "optionD": "Query Execution Time Limitations",
+            "answer": "Query Execution Time Limitations" ,
+            "stage": "Delivery: The attacker delivers the malicious SQL query to the target system. This could be through a form input on a website, for example",
+            "explaination":"Query execution time limitations can be used to limit the effectiveness of time based SQL Injection."     
+        },
+        {
+            "question": "During the weaponisation stage of the cyber kill chain, how can sql injection be used to create a malicious payload?",
+            "optionA": "By crafting SQL injection queries that include malicious code in user inputs",
+            "optionB": "By using social engineering to trick users into executing SQL injection queries",
+            "optionC": "By generating fake SSL certificates to obfuscate the injected SQL code",
+            "optionD": "to embed encrypted payloads within image files to evade detection",
+            "answer": "By crafting SQL injection queries that include malicious code in user inputs",
+            "stage": "Delivery: The attacker delivers the malicious SQL query to the target system. This could be through a form input on a website, for example",
+            "explaination":"The attacker will craft SQL Injection queries that include malicious code in user inputs"    
+        }
+    ],
+    "exploitation": [
+        {
+            "question": "How can we combat SQL Injection in the weaponisation stage of a cyberattack?",
+            "optionA": "Increase database redundancy and replication",
+            "optionB": "Implement input validation and parameterised queries",
+            "optionC": "Expand security monitoring and incident response capabilities",
+            "optionD": "Enhance user authentication and access controls",
+            "answer": "Implement input validation and parameterised queries",
+            "stage": "Exploitation: The malicious SQL query is executed on the target system, exploiting the vulnerability",
+            "explaination": "Implement input validation and parameterised queries, this will limit the different inputs available to the attacker"    
+        },
+        {
+            "question": "During the delivery stage, how might an attacker deliver an SQL Injection payload?",
+            "optionA": "When user is asked for input username",
+            "optionB": "When user is asked for input captcha",
+            "optionC": "When user is asked for input password",
+            "optionD": "When user is asked to logout",
+            "answer": "When user is asked for input username",
+            "stage": "Exploitation: The malicious SQL query is executed on the target system, exploiting the vulnerability",
+            "explaination": "When user is asked for userrname input, this will allow the user more freedom of input than the captcha or password"
+        }
+    ],
+    "installation": [
+        {
+            "question": "During the exploitation stage, what does an attacker achieve through successful SQL injection?",
+            "optionA": "Disabling security software on the target system",
+            "optionB": "Unauthorized access to a database or sensitive information.",
+            "optionC": "Distributing the payload to multiple systems",
+            "optionD": "Destroy the network capacity of the systems",
+            "answer": "Unauthorized access to a database or sensitive information",
+            "stage": "Once the attacker gains access, they establish a foothold within the system. They may install backdoors or other malicious code to maintain persistence. This step ensures that the attacker can continue to exploit the system even after the initial injection.",
+            "explaination":"The attacker will achieve unauthorised access to a database or sensitive information."
+        },
+
+        {
+            "question": "Which of these strategies aren't commonly employed during the exploitation phase of an SQL Injection attack?",
+            "optionA": "Time-Based SQL Injection",
+            "optionB": "Error Based SQL Injection",
+            "optionC": "Union Based SQL Injection",
+            "optionD": "Blind SQL Injection",
+            "answer": "Time-Based SQL injection",
+            "stage": "Once the attacker gains access, they establish a foothold within the system. They may install backdoors or other malicious code to maintain persistence. This step ensures that the attacker can continue to exploit the system even after the initial injection.",
+            "exploitation": "Time-based SQL Injection is not commonly employed at this stage of the Cyber Kill Chain" 
+        }
+    ],
+    "command":[
+        {
+            "question": "How can SQL injection be utilised in the installation stage of the cyber kill chain?",
+            "optionA": "Injecting code to disrupt normal database operations",
+            "optionB": "Installing malware on the target's operating system",
+            "optionC": "Executing a privilege escalation exploit",
+            "optionD": "Modifying database records to install backdoors or create fake accounts",
+            "answer": "Modifying database records to install backdoors or create fake accounts",
+            "stage": "Command and Control (C2): Attackers set up communication channels to control the compromised system. This allows them to issue commands, exfiltrate data, or manipulate the system further. The C2 phase enables ongoing control and interaction with the compromised environment.",
+            "explaination":"Modifying database records to install backdoors or create fake accounts, this may give the attacker easier access in the future"    
+        },
+        {
+            "question": "How do attackers establish initial access to the target system during the installation phase of an SQL injection attack?",
+            "optionA": "Exploiting weak user authentication",
+            "optionB": "Network Scanning",
+            "optionC": "Social Engineering Attacks",
+            "optionD": "Injection of a malicious SQL query",
+            "answer": "Injection of a malicious SQL query",
+            "stage": "Command and Control (C2): Attackers set up communication channels to control the compromised system. This allows them to issue commands, exfiltrate data, or manipulate the system further. The C2 phase enables ongoing control and interaction with the compromised environment.",
+            "explaination": "Injecting a malicious SQL query may allow the attacker to gain access to the database"           
+        }
+    ],
+    "actions":[
+        {
+            "question": "In the command and control stage, how can SQL injection be employed to maintain the attack?",
+            "optionA": "Exploiting a vulnerability in network communication protocols",
+            "optionB": "Injecting code to disrupt the target's command and control infrastructure",
+            "optionC": "Creating hidden database triggers or stored procedures for ongoing access",
+            "optionD": "Utilising a botnet for remote control",
+            "answer": "Creating hidden database triggers or stored procedures for ongoing access",
+            "stage": "Actions on Objective: Finally, the attacker achieves their goals. This could involve stealing sensitive data, modifying records, disrupting operations, or any other malicious activity. The specific objectives vary based on the attacker’s motives.",
+            "explaination":"Createing hidden database triggers or stored procedures for ongoing access, this will allow the attacker to gain access to the system again."
+        },
+        {
+            "question": "What is the primary goal of the attacker during the command and control stage of an SQL Injection attack?",
+            "optionA": "Establish persistent access and control",
+            "optionB": "Remove access from cybersecurity personnel",
+            "optionC": "Overwhelm the server",
+            "optionD": "To delete or modify data",
+            "answer": "Establish persistent access and control",
+            "stage": "Actions on Objective: Finally, the attacker achieves their goals. This could involve stealing sensitive data, modifying records, disrupting operations, or any other malicious activity. The specific objectives vary based on the attacker’s motives.",
+            "explaination":"Establish persistent access and control, this will allow the hacker to gain access to the system again at will."     
+        },
+
+
+
+        {
+            "question": "Which of these malicious actions won't take place during the actions on objectives phase of a SQL Injection attack?",
+            "optionA": "Database Manipulation",
+            "optionB": "Privelege Escalation",
+            "optionC": "Network Reconniassance",
+            "optionD": "Data Exfiltration",
+            "answer": "Network Reconniassance",    
+            "stage": "Actions on Objective: Finally, the attacker achieves their goals. This could involve stealing sensitive data, modifying records, disrupting operations, or any other malicious activity. The specific objectives vary based on the attacker’s motives.",
+            "explaination":"Network Reconniassance: The hacker will already have completed this step at an earlier stage."
+        },
+        {
+            "question": "What actions can be taken during the actions on objectives phase of an SQL Injection attack to minimise damage?",
+            "optionA": "Increase database backup frequency",
+            "optionB": "Disable logging and auditing ",
+            "optionC": "Implement database auditing ",
+            "optionD": "Take the network offline",
+            "answer": "Implement database auditing",
+            "stage": "Actions on Objective: Finally, the attacker achieves their goals. This could involve stealing sensitive data, modifying records, disrupting operations, or any other malicious activity. The specific objectives vary based on the attacker’s motives.",
+            "explaination":"Implementing database auditing is a method that will minimise damage to the database."    
+        }
+    ]
+}

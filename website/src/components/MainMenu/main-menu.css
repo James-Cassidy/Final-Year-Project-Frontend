@@ -1,0 +1,57 @@
+.light-main-menu-button {
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border-radius: 30px;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+  color: #14228c;
+  font-size: large;
+  font-weight: bold;
+}
+
+.light-main-menu-button:hover {
+  border-color: #14228c; /* Dark outline color on hover */
+}
+
+.dark-main-menu-button {
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border-radius: 30px;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+  color: #14228c;
+  font-size: large;
+  font-weight: bold;
+}
+
+.dark-main-menu-button:hover {
+  border-color: #14228c; /* Dark outline color on hover */
+}
+
+.contrast-main-menu-button {
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border-radius: 30px;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+  color: #14228c;
+  font-size: large;
+  font-weight: bold;
+  border-color: black; /* Dark outline color on hover */
+}
+
+.main-menu-button:hover {
+  border-color: #14228c; /* Dark outline color on hover */
+}

@@ -1,0 +1,13 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "standard-with-typescript",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+    },
+    "ignorePatterns": ["node_modules", "website", "cdk.out", "website/node_modules", "dist", "website/build", "website/coverage", "website/public"]
+}

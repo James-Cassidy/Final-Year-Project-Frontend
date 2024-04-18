@@ -1,0 +1,86 @@
+table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+tbody {
+  width: 100%;
+  background-color: transparent;
+}
+
+.sort-button {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  line-height: 1;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.light-scenario-button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  line-height: 1;
+  height: 30px;
+  width: 250px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.light-scenario-button:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark-scenario-button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  line-height: 1;
+  height: 30px;
+  width: 250px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.dark-scenario-button:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contrast-scenario-button {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  line-height: 1;
+  height: 30px;
+  width: 250px;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+}
+
+.contrast-scenario-button:hover {
+  border-color: black;
+  background-color: darken(rgba(211, 211, 211, 0.3), 20%);
+}
+
+.sort-reverse {
+  transform: rotate(180deg);
+}
+
+.selected-scenario {
+  margin-bottom: 10px;
+}

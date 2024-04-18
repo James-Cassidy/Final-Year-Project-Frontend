@@ -1,0 +1,16 @@
+bin/*.js
+lib/*.js
+website/*.js
+!jest.config.js
+*.d.ts
+node_modules
+
+./website/node_modules
+website/coverage
+./website/build
+coverage
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+dist
+website/.env

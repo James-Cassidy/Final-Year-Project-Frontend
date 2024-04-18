@@ -1,0 +1,167 @@
+{
+    "title": "Cross Site Scripting",
+    "reconnaissance": [
+        {
+            "question": "Reconnaissance: Who could be the target of a Cross Site Scripting (XSS) attack?",
+            "optionA": "A random user of a website",
+            "optionB": "A frequent user of a website",
+            "optionC": "A user with privileged access",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "explaination": "Anyone using a website can be the target, although the attacker may target a specific individual",
+            "stage": "Reconnaissence: The attacker gathers information about the target system, identifying potential vulnerabilities or weak points in the security measures." 
+        },
+
+        {
+            "question": "Reconnaissance: What might be vulnerable to a Cross Site Scripting (XSS) attack?",
+            "optionA": "Not validating input data",
+            "optionB": "Not encoding input data",
+            "optionC": "Both",
+            "optionD": "Neither",
+            "answer": "Both",
+            "explaination": "The most common vulnerabilities exploited are poor or no input validation or the input data not being encoded",
+            "stage": "Reconnaissence: The attacker gathers information about the target system, identifying potential vulnerabilities or weak points in the security measures."
+        }],
+    "weaponisation": [
+        {
+            "question": "Weaponization: Which of these are not how a malicious script may try to evade detection?",
+            "optionA": "Obfuscating code in the script",
+            "optionB": "Encoding the script",
+            "optionC": "Filtering by web application or browser",
+            "optionD": "Zipping the script",
+            "answer": "Zipping the script",
+            "explaination": "Putting the script in a zip file will not help evade detection, as it will not change the actual code",
+            "stage": "Weaponization: The attacker creates a malicious script that can exploit the identified vulnerabilities." 
+        },
+
+        {
+            "question": "Weaponization: What is the most common programming language used for XSS attacks?",
+            "optionA": "JavaScript",
+            "optionB": "HTML",
+            "optionC": "PHP",
+            "optionD": "Flash",
+            "answer": "JavaScript",
+            "explaination": "The vast majority of XXS attacks use scripts created in JavaScript, with HTML also being quite common",
+            "stage": "Weaponization: The attacker creates a malicious script that can exploit the identified vulnerabilities." 
+        }],
+    "delivery": [
+        {
+            "question": "Delivery: Which XSS attack involves a malicious script being installed on a website's server?",
+            "optionA": "Reflected XSS",
+            "optionB": "Stored XSS",
+            "optionC": "DOM Based XSS",
+            "optionD": "All of the above",
+            "answer": "Stored XSS",
+            "explaination": "Reflected XSS attacks are reflected off the server, rather than stored. Document Object Model based attacks are carried by modifying the original client side script",
+            "stage": "Delivery: The attacker delivers the malicious script to the target system. This could be through the web browser or a link in a phishing email"
+        },
+
+        {
+            "question": "Delivery: Which XSS attack could involve the user clicking a malicious link?",
+            "optionA": "Reflected XSS",
+            "optionB": "Stored XSS",
+            "optionC": "DOM Based XSS",
+            "optionD": "All of the above",
+            "answer": "Reflected XSS",
+            "explaination": "Stored XSS attacks are stored on a server, rather than relying on a link being clicked. Document Object Model based attacks are carried by modifying the original client side script",
+            "stage": "Delivery: The attacker delivers the malicious script to the target system. This could be through the web browser or a link in a phishing email"
+        },
+
+        {
+            "question": "Delivery: Which XSS attack is also known as client-side XSS?",
+            "optionA": "Reflected XSS",
+            "optionB": "Stored XSS",
+            "optionC": "DOM Based XSS",
+            "optionD": "All of the above",
+            "answer": "DOM Based XSS",
+            "explaination": "Both Reflected ans Stored XSS attacks use servers, while DOM based attacks modify the original client side script",
+            "stage": "Delivery: The attacker delivers the malicious script to the target system. This could be through the web browser or a link in a phishing email"
+        }],
+    "exploitation": [
+        {
+            "question": "Exploitation: What can an XSS attack do? ",
+            "optionA": "Read/Modify a web page's content",
+            "optionB": "Send requests to the web server",
+            "optionC": "Access the victim's cookies or local storage",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "explaination": "The attacker might be able to do one of these actions or multiple at the same time, based on what they want to achieve",
+            "stage": "Exploitation: The malicious script is executed on the target system, exploiting the vulnerability" 
+        },
+        {
+            "question": "Exploitation: Who/What executes the malicious script?",
+            "optionA": "The victim",
+            "optionB": "The attacker",
+            "optionC": "The victim's web browser",
+            "optionD": "All of the above",
+            "answer": "The victim's web browser",
+            "explaination": "Neither the user nor the attacker tend to execute the code, it is usually the victim's web browser thaat runs the script",
+            "stage": "Exploitation: The malicious script is executed on the target system, exploiting the vulnerability" 
+        }],
+    "installation": [
+        {
+            "question": "Installation: Which of the following could an XSS script install?",
+            "optionA": "A keylogger",
+            "optionB": "Ransomware",
+            "optionC": "Spyware",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "explaination": "An XSS attack can install various malicious programs or malware, including the 3 listed",
+            "stage": "Installation: Once the attacker gains access, they establish a foothold within the system. The attacker may install other malicious code to ensure that they can continue to exploit the system even after the initial script has been executed."
+        },
+
+        {
+            "question": "Installation: What might an XSS attack install?",
+            "optionA": "A script that runs everytime the victim visits the web application",
+            "optionB": "A web shell that allows the attacker to remotely execute commands",
+            "optionC": "Both",
+            "optionD": "An XSS attack can't install anything",
+            "answer": "Both",
+            "explaination": "An XSS attack can install code that will repeatedly run, or a web shell the attacker can use remotely, amongst other options",
+            "stage": "Installation: Once the attacker gains access, they establish a foothold within the system. The attacker may install other malicious code to ensure that they can continue to exploit the system even after the initial script has been executed."
+        }],
+    "command": [
+        {
+            "question": "Command and Control (C2): How does the attacker communicate with the malicious code?",
+            "optionA": "Via a C2 server",
+            "optionB": "Via a web service",
+            "optionC": "DNS queries",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "explaination": "The attacker has a variety of options for communication with the code, with all 3 being possible",
+            "stage": "Command and Control (C2): Attackers set up communication channels to control the compromised system. This allows them to issue commands, exfiltrate data, or manipulate the system further. The C2 phase enables ongoing control and interaction with the compromised environment." 
+        },
+
+        {
+            "question": "Command and Control(C2): What can the attacker do after an attack is initiated?",
+            "optionA": "Send commands",
+            "optionB": "Receive feedback",
+            "optionC": "Collect data",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "explaination": "Depending on the attackers goals, they could do all 3 of these things or one specifically",
+            "stage": "Command and Control (C2): Attackers set up communication channels to control the compromised system. This allows them to issue commands, exfiltrate data, or manipulate the system further. The C2 phase enables ongoing control and interaction with the compromised environment."
+        }],
+    "actions": [
+        {
+            "question": "Actions on Objectives: What might be the desired outcome of a successful attack?",
+            "optionA": "Gaining escalated privileges",
+            "optionB": "Remote control of the victim's web browser",
+            "optionC": "Stealing the victim's sensitive information",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "explaination": "XSS attacks are typically used to gain priveleges, control of a users browser or to steal sensitive information",
+            "stage": "Actions on Objective: Finally, the attacker achieves their goals. This could involve gaining escalated privileges, remote control of the victim's web browser, stealing the victim's sensitive information or any other malicious activity. The specific objectives vary based on the attacker’s motives."
+        },
+        {
+            "question": "Actions on Objectives: Which is unlikely to be the goal of an XSS attack?",
+            "optionA": "Gaining escalated privileges",
+            "optionB": "Remote control of the victim's web browser",
+            "optionC": "Stealing the victim's sensitive information",
+            "optionD": "Taking the website offline",
+            "answer": "Taking the website offline",
+            "explaination": "If the goal is to take a website offline, a DDoS attack would be a more likely approach",
+            "stage": "Actions on Objective: Finally, the attacker achieves their goals. This could involve gaining escalated privileges, remote control of the victim's web browser, stealing the victim's sensitive information or any other malicious activity. The specific objectives vary based on the attacker’s motives."
+        }
+    ]
+}

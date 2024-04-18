@@ -1,0 +1,289 @@
+@import '../common.scss';
+
+.light-questions {
+  display: flex;
+  flex-direction: column;
+  background-image: $lightModeTransparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  margin-top: 5%;
+  // padding: 1rem;
+
+  h2 {
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .lifeline-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lifeline {
+    position: relative;
+    top: -3px;
+  }
+
+  .lifeline-icon {
+    color: $green;
+    cursor: pointer;
+  }
+
+  .lifeline-icon:hover {
+    background: none;
+    color: darken($orange, 10%);
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .options-container {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between buttons */
+    gap: 10px; /* Add a 10px gap between buttons */
+    width: 100%;
+  }
+
+  .option {
+    background-color: $blue;
+    border-radius: $button-radius;
+    color: $white;
+    cursor: pointer;
+    margin: $md auto;
+    padding: $normal;
+    transition: 0.3s linear all;
+    text-align: center;
+    width: 90%;
+  }
+
+  .option:hover {
+    background-color: darken($blue, 20%);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .light-questions {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+.dark-questions {
+  display: flex;
+  flex-direction: column;
+  background-image: $darkModeTransparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  margin-top: 5%;
+  // padding: 1rem;
+
+  h2 {
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .lifeline-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lifeline {
+    position: relative;
+    top: -3px;
+  }
+
+  .lifeline-icon {
+    color: $green;
+    cursor: pointer;
+  }
+
+  .lifeline-icon:hover {
+    background: none;
+    color: darken($orange, 10%);
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .options-container {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between buttons */
+    gap: 10px; /* Add a 10px gap between buttons */
+    width: 100%;
+  }
+
+  .option {
+    background-color: $blue;
+    border-radius: $button-radius;
+    color: $white;
+    cursor: pointer;
+    margin: $md auto;
+    padding: $normal;
+    transition: 0.3s linear all;
+    text-align: center;
+    width: 90%;
+  }
+
+  .option:hover {
+    background-color: darken($blue, 20%);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dark-questions {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto $sm auto;
+  padding: $md;
+  width: 80%;
+}
+
+.button-container button {
+  border: none;
+  color: $off-white;
+  cursor: pointer;
+  font-family: $quicksand;
+  margin-right: $md;
+  padding: $xs $sm;
+}
+
+.normal-skip-button {
+  background-color: darken($blue, 10%);
+  box-shadow: $shadow;
+  transition: 0.2s linear all;
+}
+
+.normal-skip-button:hover {
+  background-color: darken($blue, 20%);
+}
+
+.contrast-skip-button {
+  background-color: $white;
+  color: black !important;
+  border: 1px solid black !important;
+  box-shadow: $shadow;
+  transition: 0.2s linear all;
+}
+
+.contrast-skip-button:hover {
+  background-color: darken($white, 20%);
+}
+
+.button-container button:nth-child(2) {
+  background-color: $green;
+  box-shadow: $shadow;
+  transition: 0.2s linear all;
+}
+
+.button-container button:nth-child(2):hover {
+  background-color: darken($green, 10%);
+}
+
+.button-container button:last-child {
+  background-color: $red;
+  box-shadow: $shadow;
+  transition: 0.2s linear all;
+}
+
+.button-container button:last-child:hover {
+  background-color: darken($red, 10%);
+}
+
+.contrast-questions {
+  display: flex;
+  flex-direction: column;
+  background-color: $highContrastModeSolid;
+  color: black !important;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  margin-top: 5%;
+  // padding: 1rem;
+
+  h2 {
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .lifeline-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lifeline {
+    position: relative;
+    top: -3px;
+  }
+
+  .lifeline-icon {
+    color: $green;
+    cursor: pointer;
+  }
+
+  .lifeline-icon:hover {
+    background: none;
+    color: darken($orange, 10%);
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .options-container {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between buttons */
+    gap: 10px; /* Add a 10px gap between buttons */
+    width: 100%;
+  }
+
+  .option {
+    border-radius: $button-radius;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    margin: $md auto;
+    padding: $normal;
+    transition: 0.3s linear all;
+    text-align: center;
+    width: 90%;
+  }
+
+  .option:hover {
+    background-color: darken(rgba(211, 211, 211, 0.3), 20%);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contrast-questions {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}

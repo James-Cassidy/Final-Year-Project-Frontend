@@ -1,0 +1,169 @@
+{
+    "title": "Buffer Overflow",
+    "reconnaissance": [
+        {
+            "question": "Recon: When conducting reconnaisance for buffer overflow attacks, hackers typically look for various vulnerabilities in the target system that could be exploited. Which of the following is a common vulnerability",
+            "optionA": "String or Integer inputs with no set size",
+            "optionB": "String inputs with limited size",
+            "optionC": "Date pickers",
+            "optionD": "Drop down menus",
+            "answer": "String or Integer inputs with no set size",
+            "stage":"Reconnaissance",
+            "explaination": "These vulnerabilities occur when a program does not properly validate the input size and allows more data to be written to a buffer than it can hold, leading to overwriting adjacent memory regions"
+        },
+        {
+            "question": "Recon: When conducting reconnaisance for buffer overflow attacks, hackers typically look for various vulnerabilities in the target system that could be exploited. Which of the following is a common vulnerability",
+            "optionA": "Input validation flaws",
+            "optionB": "String inputs with limited size",
+            "optionC": "Date pickers",
+            "optionD": "Drop down menus",
+            "answer": "Input validation flaws",
+            "explaination": "These flaws may allow an attacker to craft malicious input that triggers buffer overflows or other vulnerabilities."
+        },
+        {
+            "question": "Recon: When conducting reconnaisance for buffer overflow attacks, hackers typically look for various vulnerabilities in the target system that could be exploited. Which of the following is a common vulnerability",
+            "optionA": "Integer Overflow",
+            "optionB": "String inputs with limited size",
+            "optionC": "Date pickers",
+            "optionD": "Drop down menus",
+            "answer": "Integer Overflow",
+            "stage":"Reconnaissance",
+            "explaination": "Hackers search for functions which do arithmetic and will feed in extreme data to lead to integer overflow, leading to unexpected behaviour and potential security risks"
+        }],
+    "weaponisation": [
+        {
+            "question": "Weaponisation: How would a Hacker weaponise heap-based buffer overflow",
+            "optionA": "Crafting malicious input",
+            "optionB": "Executing Arbitrary Code",
+            "optionC": "Establishing Persistence",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "stage": "Weaponisation",
+            "explaination": "A hacker may use malicious input or attempt to execute arbitrary code to gain access to the system, once they have access they may attempt to install backdoors to gain persistant access."
+        },
+        {
+            "question": "Weaponisation: How would a hacker weaponise stack-based buffer overflow",
+            "optionA": "Crafting malicious input",
+            "optionB": "Memory Corruption",
+            "optionC": "Input Validation or Mitigations",
+            "optionD": "All of the above",
+            "stage": "Weaponisation",
+            "answer": "Crafting malicious input",
+            "explaination":"A hacker may weaponise stack-based buffer overflow by crafting malicious inputs"
+        }],
+    "delivery": [
+        {
+            "question": "Delivery: Which of the following is not a potential delivery method of a buffer overflow attack",
+            "optionA": "Data packets",
+            "optionB": "Documents",
+            "optionC": "Downloads",
+            "optionD": "Limited Size Text Input",
+            "answer": "Limited Size Text Input",
+            "stage": "Delivery",
+            "explaination": "A buffer overflow atttack may be delivered by data packets, documents and downloads. However, limited size text inputs can prevent them."
+        },
+        {
+            "question": "Delivery: Which of the following is not a potential delivery method of a buffer overflow attack",
+            "optionA": "USB or removable media",
+            "optionB": "File content",
+            "optionC": "Web requests",
+            "optionD": "Validated Inputs",
+            "answer": "Validated Inputs",
+            "stage": "Delivery",
+            "explaination": "Validated inputs are not a delivery method for a buffer overflow attack"
+        }],
+    "exploitation": [
+        {
+            "question": "Exploitation: What are some of the potential ways in which a hacker may exploit the system in buffer overflow",
+            "optionA": "Install Malware",
+            "optionB": "Escalate Privileges",
+            "optionC": "Steal Sensitive Data",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "stage": "Exploitation",
+            "explaination": "Installing malware, escalating privileges, and stealing sensitive data are all ways a hacker may exploit the system."
+        },
+        {
+            "question": "Exploitation: What are some of the potential ways in which a hacker may exploit the system in buffer overflow",
+            "optionA": "Execute arbitrary code",
+            "optionB": "Alter control flow",
+            "optionC": "Establish Persistence",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "stage": "Executing arbitrary code, altering control flows, and establishing persistence are all ways which a hacker may exploit the system."
+        }],
+    "installation": [
+        {
+            "question": "Installation: What may a hacker do in the installation phase",
+            "optionA": "Establish command and control",
+            "optionB": "Interrupt System Operations",
+            "optionC": "Delete Logs or Evidence",
+            "optionD": "Engage in reconnaissance",
+            "answer": "Establish command and control",
+            "stage": "Installation",
+            "explaination": "In the installation phase, the hacke will attempt to establish control over the system"
+        },
+        {
+            "question": "Installation: What steps should the system administrator use at this stage to prevent the attack continuing:",
+            "optionA": "Isolate the compromised system from the network",
+            "optionB": "Enable security controls",
+            "optionC": "Notify Stakeholders",
+            "optionD": "Monitor system changes",
+            "answer": "Isolate the compromised system from the network",
+            "stage": "Installation",
+            "explaination": "The system administrator may attempt to isolate the compromised system from the network to prevent the attack from continuing."
+        }],
+    "command": [
+        {
+            "question": "Command and Control: What may a hacker aim to do during the command and control phase of a buffer overflow attack",
+            "optionA": "Establish communication channels",
+            "optionB": "Issue commands to execute specific actions",
+            "optionC": "Evade detection",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "stage": "Command and Control",
+            "explaination": "The hacker may attempt to issue commands to execute specific actions, establish communication channels and evade detection."
+        },
+        {
+            "question": "Command and Control: What steps could a system administrator take in the command and control phase of a buffer overflow attack",
+            "optionA": "Relying Solely on Signature-based Detection",
+            "optionB": "Ignoring Anomalies",
+            "optionC": "Delaying Incident Response",
+            "optionD": "Containment and Remediation",
+            "answer": "Containment and Remediation",
+            "stage": "Command and Control",
+            "explaination": "The administrator may attempt to use containment and remediation to limit the effect of an attack"
+        }],
+    "actions": [
+        {
+            "question": "Actions on Objective: Which actions is a hacker likely to take during the 'Actions on Objective' stage a Buffer Overflow attack",
+            "optionA": "Data Exfiltration",
+            "optionB": "Privilege Escalation",
+            "optionC": "Data Destruction",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "stage": "Action",
+            "explaination": "The hacker may attempt to exfiltrate data, escalate priveleges and destroy data during this stage."
+        },
+        {
+            "question": "Actions on Objective: Which actions is a hacker likely to take during the 'Actions on Objective' stage a Buffer Overflow attack",
+            "optionA": "Establish Persistence",
+            "optionB": "Distributed Denial of Service",
+            "optionC": "Credential Theft",
+            "optionD": "All of the above",
+            "answer": "All of the above",
+            "stage": "Actions on Objective",
+            "explaination": "The hacker may attempt to steal credentials, establish persistence or launch a DDoS attack during this phase."
+        },
+        {
+            "question": "Actions on Objective: Which actions is a hacker likely to take during the 'Actions on Objective' stage a Buffer Overflow attack",
+            "optionA": "Making Significant Configuration Changes",
+            "optionB": "Data Exfiltration",
+            "optionC": "Targeting Low-Value Assets",
+            "optionD": "All of the above",
+            "answer": "Data Exfiltration",
+            "stage": "Actions on Objective",
+            "explaination": "The hacker may attempt to exfiltrate data during this stage."
+        }
+    ]
+}

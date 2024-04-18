@@ -1,0 +1,30 @@
+.text-formatting {
+  text-align: left;
+}
+
+.text-indent {
+  padding-left: 20px; /* Adjust the indentation for the second level */
+  list-style-type: circle;
+}
+
+.quiz-button-container {
+  display: flex;
+  justify-content: space-around; /* or space-evenly */
+}
+
+.quiz-button {
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  background-color: white;
+  border-radius: 30px;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  color: #14228c;
+  margin-top: 30px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.quiz-button:hover {
+  border-color: #14228c; /* Dark outline color on hover */
+}

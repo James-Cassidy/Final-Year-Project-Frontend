@@ -1,0 +1,156 @@
+@import '../common.scss';
+
+.admin-login-title {
+  margin-bottom: 30px;
+}
+
+.admin-login-field-spacer {
+  margin-bottom: 10px;
+}
+
+.admin-login-fields {
+  text-align: left;
+}
+
+.light-admin-login-menu-container {
+  display: flex;
+  flex-direction: column;
+  background-image: $lightModeTransparent;
+}
+
+@media screen and (min-width: 600px) {
+  .light-admin-login-menu-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 200px;
+  }
+}
+
+.dark-admin-login-menu-container {
+  display: flex;
+  flex-direction: column;
+  background-image: $darkModeTransparent;
+}
+
+@media screen and (min-width: 600px) {
+  .dark-admin-login-menu-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 200px;
+  }
+}
+
+.contrast-admin-login-menu-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $highContrastModeTransparent;
+  color: $highContrastText;
+}
+
+@media screen and (min-width: 600px) {
+  .contrast-admin-login-menu-container {
+    padding: 5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 200px;
+  }
+}
+
+/* Individual button styling */
+.light-admin-login-menu-submit-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid white; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+  margin-top: 20px;
+}
+
+/* Button hover state */
+.light-admin-login-menu-submit-button:hover {
+  border-color: white; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+.light-admin-login-menu-submit-button:disabled {
+  background-color: #ccc; /* Grey out background when disabled */
+  color: #999; /* Grey out text color when disabled */
+  cursor: not-allowed; /* Change cursor to not allowed when disabled */
+}
+
+.dark-admin-login-menu-submit-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid white; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+  margin-top: 20px;
+}
+
+/* Button hover state */
+.dark-admin-login-menu-submit-button:hover {
+  border-color: white; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Transparent white background on hover */
+}
+
+.dark-admin-login-menu-submit-button:disabled {
+  background-color: #ccc; /* Grey out background when disabled */
+  color: #999; /* Grey out text color when disabled */
+  cursor: not-allowed; /* Change cursor to not allowed when disabled */
+}
+
+.contrast-admin-login-menu-submit-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid black; /* Set the initial border to transparent */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+  margin-top: 20px;
+}
+
+/* Button hover state */
+.contrast-admin-login-menu-submit-button:hover {
+  border-color: black; /* Change border color on hover */
+  background-color: rgba(
+    128,
+    128,
+    128,
+    0.3
+  ); /* Transparent grey background on hover */
+}
+
+.contrast-admin-login-menu-submit-button:disabled {
+  background-color: #ccc; /* Grey out background when disabled */
+  color: #999; /* Grey out text color when disabled */
+  cursor: not-allowed; /* Change cursor to not allowed when disabled */
+}

@@ -1,0 +1,15 @@
+Known Bugs
+
+- Occasional crash when playing the game if the user clicks through the scenarios too quickly
+- Incorrect tracking of number of questions answered if the user spam clicks answers
+- Submit Scenario function in Admin Menu causes 400 response
+- Help popup icons are swapped
+- Results can be saved with a blank username/nickname
+- Results can be saved more than once, potentially resulting in duplicates on the leaderboard
+- Time missing from the leaderboard
+
+Bugs fixed since handover
+
+- Submit Scenario function in Admin Menu causes 400 response
+- Help popup icons are swapped
+- Time missing from the leaderboard

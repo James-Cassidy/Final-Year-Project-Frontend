@@ -1,0 +1,168 @@
+/* Container for the title bar */
+.TitleBarBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.light-titlebar-background {
+  background-color: #1976d2;
+}
+
+/* Dark mode */
+.dark-titlebar-background {
+  background-color: #2c2c2c !important; /* Dark mode background color */
+}
+
+/* high Contrast mode */
+.contrast-titlebar-background {
+  background-color: #ffffff !important; /* Dark mode background color */
+  color: black !important;
+}
+
+/* Container for the title and buttons */
+.TitleBar {
+  display: flex;
+  justify-content: space-between; /* Ensures the title and buttons are spaced out */
+  align-items: center; /* Align items vertically */
+  margin-top: 10px; /* Top margin */
+  margin-bottom: 10px; /* Bottom margin */
+}
+
+/* Title styling */
+.Title {
+  font-size: 55px; /* Font size */
+  padding-left: 20px; /* Left padding */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font family */
+  margin: 0; /* Remove default margin */
+  position: absolute; /* Positioning */
+}
+
+/* Container for the buttons */
+.TitleBarButtons {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width */
+}
+
+/* Individual button styling */
+.light-title-bar-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 150px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+}
+
+/* Button hover state */
+.light-title-bar-button:hover {
+  border-color: white; /* Change border color on hover */
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent white background on hover */
+}
+
+/* Dark mode */
+.dark-title-bar-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid transparent; /* Set the initial border to transparent */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 150px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+}
+
+/* Dark mode button hover state */
+.contrast-title-bar-button:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent white background on hover */
+  color: black; /* Change text color on hover */
+}
+
+/* High Contrast mode */
+.contrast-title-bar-button {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid black; /* Set the initial border to transparent */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Text decoration */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  width: 150px; /* Button width */
+  border-radius: 5px; /* Border radius */
+  margin: 0 5px; /* Margin */
+}
+
+/* Dark mode button hover state */
+.dark-title-bar-button:hover {
+  border-color: black; /* Change border color on hover */
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent white background on hover */
+  color: black; /* Change text color on hover */
+}
+
+/* Spacer to push buttons to the right */
+.Spacer {
+  flex-grow: 1; /* Pushes buttons to the right */
+}
+
+/* Styling for icons in the title bar */
+.TitleBarIcon {
+  background-image: url('../../../public/logo512.png');
+  background-size: cover;
+  position: absolute; /* Positioning */
+  height: 95px; /* Height */
+  margin-left: auto; /* Auto margin */
+  background-repeat: no-repeat; 
+  margin-left: 92%; /* Adjusted margin */
+  z-index: 9999;
+  width: 96px;
+}
+
+.light-app-background {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url('../../../public/HackAttackBackground.jpg');/* url('../../../public/background-image-1.jpg'); */
+  background-size: cover; 
+  /* background-size: contain; */
+  background-repeat: no-repeat; 
+}
+
+.dark-app-background {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url('../../../public/HackAttackBackground.jpg'); /* url('../../../public/background-image-1.jpg'); */
+  background-size: cover; 
+  /* background-size: contain; */
+  background-repeat: no-repeat; 
+}
+
+.contrast-app-background {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  background-size: cover; 
+  /* background-size: contain; */
+  background-repeat: no-repeat; 
+}

@@ -1,0 +1,87 @@
+{
+    "title": "Distributed Denial Of Service", 
+    "reconnaissance": [
+        {
+            "question": "How might a malicious user utilise a DDoS attack to aid themselves in the reconnaissance stage of the cyber kill chain?",
+            "optionA": "To directly extract sensitive",
+            "optionB": "To gain direct access to the companies database",
+            "optionC": "By using a DDOS attack as a distraction while they infiltrate and gather information covertly",
+            "optionD": "To hide the hackers identity, making tracking the user impossible ",
+            "answer": "By using a DDOS attack as a distraction while they infiltrate and gather information covertly",
+            "stage": "Reconnaissance",
+            "explaination": "Using a DDOS Attack to cover for other malicious activities"
+        }
+    ],
+    "weaponisation": [
+        {  
+            "question": "What action should you take during the weaponisation phase of a DDoS attack?" ,
+            "optionA": "By relying solely on firewalls" ,
+            "optionB": "By not sharing threat intelligence" ,
+            "optionC": "By filtering traffic" ,
+            "optionD": "By ignoring Anycast DNS",
+            "answer" : "By filtering traffic",
+            "stage": "Weaponisation",
+            "explaination": "By filtering traffic, you my limit the effects of a DDoS attack during the weaponisation stage"
+        }
+    ],
+    "delivery": [
+        {  
+            "question": "What action should you take during the delivery phase of a DDoS attack",
+            "optionA": "Block all network traffic" ,
+            "optionB": "Relying on firewalls" ,
+            "optionC": "Implementing rate limiting",
+            "optionD": "Avoiding collaboration with other organisations",
+            "answer" : "Implementing rate limiting",
+            "stage": "Delivery",
+            "explaination": "Implementing rate limiting will limit the effects of a DDoS attack"
+        }
+    ],
+    "exploitation": [
+        {  
+            "question": "What action should you take during the exploitation phase of a DDoS attack?",
+            "optionA": "Block all network traffic." ,
+            "optionB": "Disconnecting the network from the internet." ,
+            "optionC": "Rely on Intrusion Detection Systems (IDS)",
+            "optionD": "Deploy DDOS mitigation appliances",
+            "answer" : "Deploy DDOS mitigation appliances",
+            "stage": "Exploitation",
+            "explaination": "During the exploitation phase of a DDoS attack the system administrator may deploy DDoS mitigation appliances."
+        }
+    ],
+    "installation": [
+        {  
+            "question": "What action should you take during the installation phase of a DDoS attack?",
+            "optionA": "Configure rate limiting and traffic shaping" ,
+            "optionB": "Shut down servers temporarily" ,
+            "optionC": "Deploy additional servers to manage all traffic",
+            "optionD": "Increase bandwidth capacity",
+            "answer" : "Configure rate limiting and traffic shaping",
+            "stage": "Installation",
+            "explaination": ""
+        }
+    ],
+    "command": [
+        {
+            "question": "What is the primary goal of a malicious actor during the Command and Control phase of a DDoS attack",
+            "optionA": "To overload the targeted network, stopping it from functioning properly",
+            "optionB": "To inject malicious code into the system",
+            "optionC": "To encrypt their malicious activities",
+            "optionD": "To control all comprimised devices to launch a DDoS attack",
+            "answer": "To control all comprimised devices to launch a DDoS attack",
+            "stage": "Command and Control",
+            "explaination": "During the command and control phase the primary goal of an attacker is to control all compomised devices to launch a DDoS attack"  
+        }
+    ],
+    "actions": [
+        {  
+            "question": "What action should you take during the Actions on Objectives phase of a DDoS attack?",
+            "optionA": "Focus on endpoint security" ,
+            "optionB": "Prioritise user authentication" ,
+            "optionC": "Implement strict content filtering",
+            "optionD": "Implementing IP rate limiting",
+            "answer" : "Implementing IP rate limiting",
+            "stage": "Action on Objective",
+            "explaination": "Implementing IP Rate limiting"
+        }
+    ]
+}
